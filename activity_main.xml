@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:columnCount="4"
+    android:rowCount="7"
+    android:layout_marginBottom="8dp"
+    tools:context=".MainActivity"
+    >=
+    <!--网格布局
+    和自身内容一样的长度 和父组件一样的长度
+    layout-gravity=子元素在父元素的对齐方式,设置在子元素上
+    布局内控件排列方式为水平排列
+    该属性所在控件距下部最近控件的最小值8
+    context 哪些属性在运行的时候是被忽略的，只在设计布局的时候有效-->
+
+    <!-- 结果显示框
+    gravity= 本元素所有子元素的对齐方式,设置在父元素上
+    小数点数 按钮移动光标是按钮会变成选中状态 false跳过此组件，下一个组件变成选中状态-->
+    <EditText
+        android:id="@+id/text"
+        android:layout_height="93dp"
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="bottom|right"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:textSize="55sp"
+        android:background="@null"
+        android:focusable="false"/>
+    <!-- 清除输出窗口的所有内容 -->
+    <Button
+        android:id="@+id/btn_clear"
+        android:backgroundTint="#F44336"
+        android:text="C"
+        android:textSize="20sp" />
+    <!--正负数切换-->
+    <Button
+        android:id="@+id/btn_PandM"
+        android:backgroundTint="#009688"
+        android:text="+/-"
+        android:textSize="20sp" />
+    <!--百分比-->
+    <Button
+        android:id="@+id/btn_percent"
+        android:backgroundTint="#009688"
+        android:text="%"
+        android:textSize="20sp" />
+    <!--退格键-->
+    <Button
+        android:id="@+id/btn_del"
+        android:backgroundTint="#F44336"
+        android:text="←"
+        android:textSize="20sp" />
+    <!--正弦计算-->
+    <Button
+        android:id="@+id/btn_sin"
+        android:backgroundTint="#FF9800"
+        android:text="sin"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+    <!--余弦计算-->
+    <Button
+        android:id="@+id/btn_cos"
+        android:backgroundTint="#FF9800"
+        android:text="cos"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+    <!--正切计算
+    文本小写不适用于lablelayout-->
+    <Button
+        android:id="@+id/btn_tan"
+        android:backgroundTint="#FF9800"
+        android:text="tan"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <!--除法计算-->
+    <Button
+        android:id="@+id/btn_div"
+        android:backgroundTint="#009688"
+        android:text="÷"
+        android:textSize="20sp" />
+    <!--左括号-->
+    <Button
+        android:id="@+id/btn_leftbra"
+        android:backgroundTint="#009688"
+        android:text="("
+        android:textSize="20sp" />
+    <!--右括号-->
+    <Button
+        android:id="@+id/btn_rightbra"
+        android:backgroundTint="#009688"
+        android:text=")"
+        android:textSize="20sp" />
+    <!--开平方根-->
+    <Button
+        android:id="@+id/btn_squ2"
+        android:backgroundTint="#009688"
+        android:text="√￣"
+        android:textSize="20sp" />
+    <!--乘法计算-->
+    <Button
+        android:id="@+id/btn_mul"
+        android:backgroundTint="#009688"
+        android:text="×"
+        android:textSize="20sp" />
+    <!--7-->
+    <Button
+        android:id="@+id/btn_7"
+        android:backgroundTint="#4CAF50"
+        android:text="7"
+        android:textSize="20sp" />
+    <!--8-->
+    <Button
+        android:id="@+id/btn_8"
+        android:backgroundTint="#4CAF50"
+        android:text="8"
+        android:textSize="20sp" />
+    <!--9-->
+    <Button
+        android:id="@+id/btn_9"
+        android:backgroundTint="#4CAF50"
+        android:text="9"
+        android:textSize="20sp" />
+    <!--减法计算-->
+    <Button
+        android:id="@+id/btn_sub"
+        android:backgroundTint="#009688"
+        android:text="-"
+        android:textSize="20sp" />
+    <!--4-->
+    <Button
+        android:id="@+id/btn_4"
+        android:backgroundTint="#4CAF50"
+        android:text="4"
+        android:textSize="20sp" />
+    <!--5-->
+    <Button
+        android:id="@+id/btn_5"
+        android:backgroundTint="#4CAF50"
+        android:text="5"
+        android:textSize="20sp" />
+    <!--6-->
+    <Button
+        android:id="@+id/btn_6"
+        android:backgroundTint="#4CAF50"
+        android:text="6"
+        android:textSize="20sp" />
+    <!--加法计算-->
+    <Button
+        android:id="@+id/btn_add"
+        android:backgroundTint="#009688"
+        android:text="+"
+        android:textSize="20sp" />
+    <!--1-->
+    <Button
+        android:id="@+id/btn_1"
+        android:backgroundTint="#4CAF50"
+        android:text="1"
+        android:textSize="20sp" />
+    <!--2-->
+    <Button
+        android:id="@+id/btn_2"
+        android:backgroundTint="#4CAF50"
+        android:text="2"
+        android:textSize="20sp" />
+    <!--3-->
+    <Button
+        android:id="@+id/btn_3"
+        android:backgroundTint="#4CAF50"
+        android:text="3"
+        android:textSize="20sp" />
+    <!--等于号
+    layout_width是整个控件而言的，是与父控件之间的关系 全
+    layout_width可以实现 android:width 单 的效果
+    layout_gravity设置该控件相对于父容器对齐方式
+    2 当前子控件占两列。
+    fh必要的时候增加对象的横向大小，以完全充满其容器。-->
+    <Button
+        android:id="@+id/btn_equ"
+        android:layout_width="77dp"
+        android:layout_rowSpan="2"
+        android:layout_gravity="fill"
+        android:backgroundTint="#F44336"
+        android:text="="
+        android:textSize="20sp" />
+    <!--0-->
+    <Button
+        android:id="@+id/btn_0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:backgroundTint="#4CAF50"
+        android:text="0"
+        android:textSize="20sp" />
+    <!--小数点-->
+    <Button
+        android:id="@+id/btn_p"
+        android:backgroundTint="#4CAF50"
+        android:text="."
+        android:textSize="20sp" />
+
+
+</GridLayout>
